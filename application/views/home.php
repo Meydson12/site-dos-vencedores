@@ -1,3 +1,15 @@
+<!-- Page header with logo and tagline-->
+    <header class="py-5 bg-light border-bottom mb-4">
+        <div class="container">
+            <div class="text-center my-5">
+                <h1 class="fw-bolder">IGREJA DOS VENCEDORES</h1>
+                <p class="lead mb-0">14 anos adorando e buscando ao Senhor</p>
+
+            </div>
+        </div>
+    </header>
+
+
 <!-- Page content-->
         <div class="container">
             <div class="row">

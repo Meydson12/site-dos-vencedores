@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+    # Ativa o motor de reescrita
+    RewriteEngine On
+
+    # Caminho relativo ao seu projeto no localhost
+    RewriteBase /vencedores/igreja/
+
+    # Evita redirecionar se o arquivo ou diretório existir
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Evita redirecionar index.php, robots.txt ou pasta public
+    RewriteCond %{REQUEST_URI} !^/(index\.php|robots\.txt|public/)
+
+    # Redireciona tudo para index.php
+    RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+</IfModule>
+
+# Impede listagem de diretórios
+Options -Indexes
+
+# Configura charset padrão
+AddDefaultCharset UTF-8
